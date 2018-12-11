@@ -68,7 +68,7 @@ a:hover {
     background-size: cover;
     background-attachment: fixed;
 }
-h1 {
+h3 {
 
   text-shadow: 1px 1px white, -1px -1px #444;
   -webkit-background-clip: text;
@@ -85,12 +85,6 @@ color: #fff;
 text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
 text-align: center;
 }
-
-h3 {
-  text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-
 
  #part2{
   display: inline-block;
