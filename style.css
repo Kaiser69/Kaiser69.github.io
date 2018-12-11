@@ -1,0 +1,446 @@
+
+  body, html {
+      height: auto;
+  }
+
+/* Change Brand Font */
+
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Change Navigation Color */
+.navbar #myMenu .custom-nav .nav-item a {
+  color: #fff;
+}
+.navbar #myMenu .custom-nav .nav-item a:hover{
+  color: #F0AAB1;
+}
+/* Make Header Image Responsive */
+.back-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  border-radius: 0px;
+  margin-top: 74px;
+  
+}
+
+
+
+
+/* Header Image Sub-Title */
+.st {
+  font-size: 24px;
+}
+
+/* Change Footer Social Icon Color */
+a {
+  color:  rgba(28, 136, 76, 0.959);
+}
+a:hover {
+  color: rgb(240, 94, 94);
+}
+
+/* jumbotron prallex*/
+
+#part1 {
+    background-image: url(images/Banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    background-position: 50% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+
+  text-shadow: 1px 1px white, -1px -1px #444;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+ 
+}
+
+h2 {
+
+font-family: 'Futura';
+color: #fff;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+text-align: center;
+}
+
+h3 {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+
+ #part2{
+  display: inline-block;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(images/Banner1.jpeg);
+  background-image:100% 50% 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #1abc9c;
+  font-size: 1.7em;
+  text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container{  padding-top: 20px;
+  padding-bottom: 20px;}
+
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: #5b1f6d9f;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(35, 4, 39, 0.863) rgba(0, 0, 0, 0.671);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #48ff00;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+
+  }
+
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+
+  }
+}
+
+#googleMap {
+ height: 500px;
+}
+
+.xmas {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url("images/christmas.jpg") no-repeat 0 0/cover;
+}
+
+.xmas .to {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+.xmas .to div {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+@-webkit-keyframes hover {
+  0% {
+    transform: translate3d(0, 0, 0);
+    color: #b81313;
+  }
+  50% {
+    transform: translate3d(0, -0.2em, 0);
+    color: #db3e3e;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #b81313;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  }
+}
+
+.headline {
+  margin: 0px !important;
+  color: #b81313;
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: normal;
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 0 .05em .1em #fff;
+  animation-name: hover;
+  -webkit-animation-name: hover;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-duration: 3.5s;
+  -webkit-animation-duration: 3.5s;
+}
+
+@-webkit-keyframes animationFrames{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animationFrames{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.xmas-ornament {
+  float: right;
+  width: 8em;
+  height: 8em;
+  margin: 5em 0 0 2em;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px 20px rgba(255,255,255,.5), 15px 15px 65px rgba(0,0,0,.5);
+  animation: animationFrames ease-in-out 3s;
+  -webkit-animation: animationFrames ease-in-out 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  transform-origin: 50% -2em;
+  float: left;
+}
+.xmas-ornament::after {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  display: block;
+  width: 70%;
+  height: 70%;
+  content: '';
+  border-radius: 50%;
+  border-color: rgba(255,255,255,.06);
+  border-style: none solid solid none;
+  border-width: 2px;
+  background-image: -webkit-radial-gradient(70px 70px, circle closest-corner, rgba(255,255,255,.005), rgba(255,255,255,.15));
+  background-image: -moz-radial-gradient(70px 70px, circle closest-corner, rgba(255,255,255,.005), rgba(255,255,255,.15));
+  background-image: -ms-radial-gradient(70px 70px, circle closest-corner, rgba(255,255,255,.005), rgba(255,255,255,.15));
+  background-image: -o-radial-gradient(70px 70px, circle closest-corner, rgba(255,255,255,.005), rgba(255,255,255,.15));
+  background-image: radial-gradient(70px 70px, circle closest-corner, rgba(255,255,255,.005), rgba(255,255,255,.15));
+}
+.xmas-ornament::before {
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  margin-left: -2em;
+  display: block;
+  width: 4em;
+  height: 2.3em;
+  content: '';
+  background: silver;
+  background: linear-gradient(to right, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+  border-radius: .3em;
+}
+.red {
+  background: red;
+  background-image: -webkit-radial-gradient(70px 70px, circle farthest-corner, rgb(255,0,0), rgb(127,0,0));
+  background-image: -moz-radial-gradient(70px 70px, circle farthest-corner, rgb(255,0,0), rgb(127,0,0));
+  background-image: -ms-radial-gradient(70px 70px, circle farthest-corner, rgb(255,0,0), rgb(127,0,0));
+  background-image: -o-radial-gradient(70px 70px, circle farthest-corner, rgb(255,0,0), rgb(127,0,0));
+  background-image: radial-gradient(70px 70px, circle farthest-corner, rgb(255,0,0), rgb(127,0,0));
+}
+.blue {
+  background: blue;
+  background-image: -webkit-radial-gradient(70px 70px, circle farthest-corner, rgb(0,0,255), rgb(0,0,127));
+  background-image: -moz-radial-gradient(70px 70px, circle farthest-corner, rgb(0,0,255), rgb(0,0,127));
+  background-image: -ms-radial-gradient(70px 70px, circle farthest-corner, rgb(0,0,255), rgb(0,0,127));
+  background-image: -o-radial-gradient(70px 70px, circle farthest-corner, rgb(0,0,255), rgb(0,0,127));
+  background-image: radial-gradient(70px 70px, circle farthest-corner, rgb(0,0,255), rgb(0,0,127));
+}
+
+.pull-right {
+  margin-left: 30px;
+}
+
+.xmas #xmas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.xmas .from {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+}
+.xmas .from div {
+  font-family: "Berkshire Swash", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.xmas .from .jp-link {
+  display: inline-block;
+  font-family: 'Berkshire Swash', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  -webkit-transition: 400ms ease;
+          transition: 400ms ease;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.xmas .from .jp-link:hover {
+  color: #e74c3c;
+}
