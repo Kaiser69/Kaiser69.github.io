@@ -1,346 +1,436 @@
+
 <!DOCTYPE html>
-<html>
-<title>Kaiser Design</title>
-<meta charset="UTF-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css1/style1.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css' rel='stylesheet'/>
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url("media/bild/kai.png");
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("media/bild/kai2.png");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-
-.bgimg-3 {
-    background-image: url("media/bild/bbkimg.png");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
-}
-</style>
+  <!-- Custom CSS -->
+ <link rel="stylesheet" href="style.css">
+  <title>Kaiser Dev</title>
+</head>
+                      <!-- 
+            Theme - Single Page Bootstrap Theme
+            Developer - Kaiser A ÖzHun
+            Email - pen1921@me.com
+            Website - www.kaiserlund.ml
+                    -->
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button" style="color:LimeGreen;">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small" style="color:LimeGreen;"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small" style="color:LimeGreen;"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="color:LimeGreen;"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-Blue">
-      <i class="fa fa-search" style="color:LimeGreen;"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-<br><br><br><br><br><br><br><br><br><br><br><br>
-
-  <div class="w3-center" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-xxxlarge  w3-wide w3-animate-opacity" style="color:rgb(255, 255, 255)">Kaiser<span class="w3-hide-medium" style="color:rgb(255, 255, 255)">.A.</span style="color:rgb(255, 255, 255)">ÖzHun</span>
-    <p class="w3-center w3-xlarge " style="color:white">Content pruduser/Fulstac developer/ Designer</p>
-                  
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p style="color:rgb(73, 33, 185)" class="w3-center w3-wide"><em>Content Producer/Developer(/Mobile/Web/AR)/Designer</em></p>
-  <p>  My name is Kaiser Abdurusul OzHun, my strong points are that I have 20 years of experience 
-        in free art, design, media, app design and develop and digital business...  
-   <p> Professional roles: • Advanced Programmer iPhone and Android (Swift, Java, JavaScript, HTML, CSS PHP and AngularJS)</p> 
-           <p>•Content producer; Providers, Testers and quality-proof web and mobile applications </p>  
-             <p>• Text, image, audio, video and infographic • Social and digital media
-            • Streaming plus 360 °, 3D, AR, VR and MR • Front and backend, Web App Developer... etc.</p>
-        
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p>
-      <p>Kaiser A ÖzHun</p>
-      <p style="color:rgb(73, 33, 185)" class="w3-wide" >Speaking Language Fluently: </p>
-      <p>Swedish, English, Chinese and Turkish</p>
-      <img src="media/bild/kai1.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  <!-- Start Nagigation -->
+  <nav class="navbar navbar-expand-sm navbar-dark  bg-dark pl-5 fixed-top ">
+    <a href="index.html" class="navbar-brand">KaiserDDev</a>
+    <span class="navbar-text">Developer, Designer</span>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myMenu">
+      <ul class="navbar-nav pl-5 custom-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#Courses" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="#Team" class="nav-link">Team</a></li>
+        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-     
-              I'm a person who really appreciates new challenges and takes me with them with a great initiative and dedication. 
-            As a colleague, I am good at motivating others, not least in stressful situations and believe that good humor can 
-            ease most situations. In my job, I strive to get a good one overview of my duties and solve them with a focus on 
-            performance efficiency. Taking responsibility for my work and explaining the design choices I make for customers 
-            and colleagues. Have a good knowledge and working experience of the different technologies like: Unity, Adobe Pro, 
-            Adobe after effect, Adobe Photoshop, Illustrator, Indesign, Experience Design, PowerPoint and Sketch, 
-             Agile software development methods etc.</p>
+  </nav> <!-- End Navigation -->
+  <!-- back to the top-->
+  <a name="top"></a>
+  <!-- Start Header Jumbotron-->
+  <header id="part1" class="jumbotron back-image">
+    <div class="text-center" style="margin-top: 120px;">
+      <h1 class="text-uppercase font-weight-bold text-warning" >Welcome to Kaiser A ÖzHun DDev page</h1>
+      <h3 class="font-italic font-weight-bold text-success mr-4">Developer, Designer and Conten Producer</h3>
+      <a href="#Contact" class="btn btn-outline-dark mr-4">Contact Me</a>
+      <a href="https://www.linkedin.com/in/kaiser-a-özhun-89842313/" target="_blank" class="btn btn-outline-dark">Linkedin</a>
     </div>
-  </div>
-  <p style="color:rgb(89, 42, 177)" class="w3-large w3-center w3-wide w3-padding-16">I'm really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography and Filming</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-green w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-desktop"></i>Web and Mobile App Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-green w3-center" style="width:98%">98%</div>
-  </div>
-
-<p class="w3-wide"><i class="fa fa-laptop"></i> Programming Skills:  (Swift, Java,JS, AngularJS,JQuery, HTML, CSS, PHP) </p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-green w3-center" style="width:85%">85%</div>
-  </div>
-
-  <p class="w3-wide"><i class="fa fa-photo"></i>Adobe CC</p>
-  <div  class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-green w3-center" style="width:95%">95%</div>
-  </div>
-</div>
-
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge" style="color:rgb(13, 252, 5)">IT Education & IT Training</span><br>
-      <p class="w3-wide"><i class="fa fa-mortar-board"></i> Design and develop</p> 
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">2018 Augusti - Currently</span><br>
-      Malmö Yrkeshögskola<br> - <br>Content Producer
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">2017 January - 2018 Juni</span><br>
-      Malmö Yrkeshögskola <br> - <br> Advanced Programming iPhone and Android
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">2014 February - 2014 July</span><br>
-      London College of Contemporary Arts <br> - <br> Digital Graphic Design 
-    </div>
-  </div>
-  
-  
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span style="color:rgb(13, 252, 5)" class="w3-xxlarge w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p  class="w3-center w3-wide" style="color:rgb(73, 33, 185)"><em>Here are some of my latest Work Experience.<br> Click on the images to visit the link: <link rel="stylesheet" href=""></em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-
-
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-
-      <a href="https://xd.adobe.com/view/e5a53d49-239e-4140-b0f3-4ecc7a505d68/?fullscreen" target="_blank">
-      <img src="media/bild/kdesign.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Digital-S"></a>
-    </div>
-
-    <div class="w3-col m3">
-        <a href="https://appadvice.com/app/uyghur-voice-radio/1364894849" target="_blank">
-      <img src="media/bild/design.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="digitalb"></a>
-    </div>
-
-    <div class="w3-col m3">
-        <a href="https://xd.adobe.com/view/756ee771-85b0-4150-9cac-27e4c8adcf8d/?fullscreen" target="_blank">
-      <img src="media/bild/AR1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AR1"></a>
-    </div>
-
-    <div class="w3-col m3">
-        <a href="https://xd.adobe.com/view/682493c9-1138-4c03-7a0f-37c7e6bab761-1e15/?fullscreen&hints=off" target="_blank">
-      <img src="media/bild/pfolio.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="pfolio"></a>
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-
-        <a href="https://xd.adobe.com/view/f8b96777-40fa-40d5-5275-f3f45be23e4f-8e88/?fullscreen">
-      <img src="media/bild/Digital-S.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Digital-S"></a>
-    </div>
-
-    <div class="w3-col m3">
-        <a herf="https://cloud.acrobat.com/file/53d27225-120c-4a1f-b2d9-806a91466512">
-       <img src="media/bild/Content.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Contact"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <img src="media/bild/digitalb.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="digitalb">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="media/bild/webdev.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="webdev">
-    </div>
-    <a href="https://xd.adobe.com/view/508962c7-19dd-455d-63d3-02827ff027e8-26b8/?fullscreen" target="_blank button class="w3-button w3-padding-large w3-light-grey style="margin-top:64px"> <span class="w3-center w3-padding-large w3-light-green w3-round-xxlarge w3-xlarge w3-wide w3-animate-opacity">Download <span class="w3-hide-small">My</span>Resume</span></button></a>
-  </div>
-</div>
-
-
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center w3-wide"   style="color:rgb(73, 33, 185)"><em>I'd love your feedback!</em><br><br><img src="media/bild/kai3.png" alt="Kaiser the developer." style="width:145px;height:105px;" class="img-fluid"></p>
-
-  
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Sweden, Lund<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +46 703637554<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: pen1921@me.com<br>
+  </header> <!-- End Header Jumbotron -->
+  <br><br>
+  <!-- Start Services -->
+  <div class="container text-center border-bottom" id="Services"> 
+    <h2>My Skills</h2> <br><br><br>
+    <div class="row mt-4">
+      <div class="col-sm-4 mb-4">
+        <a href="#"><img src="images/apple-droid-use.png" alt=""></a>
+        <h4 class="mt-4">iOS & Android Application</h4>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+      <div class="col-sm-4 mb-4">
+        <a href="#"><img src="images/web-app.png" alt=""></a>
+        <h4 class="mt-4">Web Application</h4>
+      </div>
+      <div class="col-sm-4 mb-4">
+        <a href="#"><img src="images/design.png" alt=""></a>
+        <h4 class="mt-4">Design</h4>
+      </div>
     </div>
-  </div>
+  </div> <!-- End Services -->
+<br><br>
+  <!-- Start Course  -->
+  <div class="container pt-5" id="Courses"> <!-- Start Course Container -->
+    <h2 class="text-center">About Me</h2> <br><br>  <!-- Course Heading -->
+    <div class="row mt-4">        <!-- Start Course 1st Row -->
+      <div class="col-lg-6 mb-4">     <!-- Start Course 1st Row's 1st Column -->
+        <img src="images/course1.jpeg" alt="" class="img-fluid"> <br><br>
+        <p>Skills: My name is Kaiser Abdurusul OzHun, my strong points are that I have 20 years of experience in free art, design, media, app design, develop and digital business...</p> 
+        <p>Professional roles: Advanced Programmer iPhone and Android, Web and Webapp (Swift, Java, HTML5, CSS3, PHP, JavaScript-SE6(jQuery, AngularJS, React, Bootstrap) and WordPress. Translation of wireframes and rapid prototyping tools to accurate, working code and Frameworks (Angular, React, Vue). Experience of modern software engineering techniques e.g. Continuous Integration (CI), Version Control Systems (Subversion / Git, Code validation and quality analysis).</p>
+       
+      </div>  <!-- End Course 1st Row's 1st Column -->
+            
+      <div class="col-lg-6">    <!-- Start Course 1st Row's 2nd Column -->
+        <h3 class="text-center">Developer, Designer and Conten Producer</h3> <br>
+         <p>* Extensive application development experience for a variety of industries and clients. </p>
+        <p>* Experience working with latest coding software and certified in several software platforms.</p> 
+        <p>* Understanding of current business processes and ways to implement new and effective coding language.</p>
+        <p> * Outstanding attention to detail, problem-solving techniques, and communicative tendencies. </p>
+        <p> * UI Designer- attention to details, creativity, problem solving abilities, and strong presentation skills.</p>
+        <p> * I do Build, Design, Code, and To Consult By Technology solve the problems.</p>
+        <p>* Content producer; Providers, Testers and quality-proof web and mobile applications,mockups to clients.</p>
+        <p>* Text, image, audio, video and infographic • Social and digital media • Streaming plus 360 °, 3D, AR, VR and MR... etc.</p>
+   
+    </div>  <!-- End Course 1st Row's 2nd Column -->
+    </div>  <!-- End Course 1st Row -->
+
+    <div class="row mt-4">    <!-- Start Course 2nd Row -->
+      <div class="col-lg-6">  <!-- Start Course 2nd Row's 1st Column -->
+        <h3 class="text-center">IT Education & IT Training</h3> <br>
+        <p>Malmö Yrkeshögskola: Advanced Programming iPhone and Android and Content Producer.</p>
+        <p>London College of Contemporary Arts: Digital Graphic Design (Adobe Creative Cloud-program.</p>  
+    </div>  <!-- End Course 2nd Row's 1st Column -->
+
+      <div class="col-lg-6 mb-4">   <!-- Start Course 2nd Row's 2nd Column -->
+        <img src="images/course2.jpeg" alt="" class="img-fluid"> 
+      </div>    <!-- End Course 2nd Row's 2nd Column -->
+    </div>    <!-- End Course 2nd Row -->
+  </div> <!-- End Course Container --> <!-- End Course  -->
+  <br><br><br>
+  <!-- Start Team  -->
+  <section>
+  <div class="jumbotron bg-secondary" id="Team" style="border-radius: 0px;">   <!-- Start Team Jumbotron -->
+    <div class="container">     <!-- Start Team Container -->
+      <h2 class="text-center text-white">Team</h2>    <!-- Team Heading-->
+      <div class="row mt-5">    <!-- Start Team Row-->
+        <div class="col-lg-3 col-sm-6">     <!-- Start Team 1st Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center">
+              <img src="images/avtar1.jpeg" class="img-fluid" style="border-radius: 100px; height:140px;">
+              <h4 class="card-title">Augmented Reality</h4>
+              <p class="card-text">Augmented Reality- Future Technology: It is a technology being rapidly developed and used for entertainment, business, marketing, art, social networking, and activism.</p>
+            </div>
+          </div>
+        </div>    <!-- End Team 1st Column-->
+
+        <div class="col-lg-3 col-sm-6">     <!-- Start Team 2nd Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center">
+              <img src="images/avtar2.jpeg" class="img-fluid" style="border-radius: 100px; height:140px;">
+              <h4 class="card-title">Mobile Web App Development </h4>
+              <p class="card-text">Hybrid apps work across platforms and behave like native apps. A hybrid app is essentially a combination of a native app and a web app. </p>
+            </div>
+          </div>
+        </div>      <!-- End Team 2nd Column-->
+
+        <div class="col-lg-3 col-sm-6">       <!-- Start Team 3rd Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center">
+              <img src="images/avtar3.jpeg" class="img-fluid" style="border-radius: 100px; height:140px;">
+              <h4 class="card-title">Content Producer</h4>
+              <p class="card-text">Content producer - create, edit, and arrange the text, video, audio, images, and other materials that may be included on a website.And to running it from a technical standpoint. </p>
+            </div>
+          </div>
+        </div>       <!-- End Team 3rd Column-->
+
+        <div class="col-lg-3 col-sm-6">        <!-- Start Team 4th Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center">
+              <img src="images/avtar4.jpeg" class="img-fluid" style="border-radius: 100px; height:140px;">
+              <h4 class="card-title"> Kaiser DDev Portfolio</h4>
+              <p class="card-text">Content Producer, Designer & Developer. I do - Build, Design, Code, and to Consult By Technology solve the problems with latest web technologies, frameworks and tools.</p> 
+            </div>
+          </div>
+        </div>     <!-- End Team 4th Column-->
+      </div>    <!-- End Team Row-->
+    </div>  <!-- End Team Container -->
+  </div> <!-- End Team Jumbotron -->
+  
+  <br><br>
+  <div id="part2">
+
+    <section>
+            <div class="container col-lg-1 col-offset-6 centered">
+              <div class="background-img">
+                <div class="box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content">
+                    <h3>KaiserDDev</h3>
+                    <p><a class="text-warning" href="kaiserlund.ml" target="_blank"> Smart Tech, Web/App, Mobile/App and UI.</a></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
 </div>
 
+<br><br>
 
-<!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-     <i><a href="https://www.facebook.com/profile.php?id=100013530880059"target="_blank">
-          <img src="media/bild/facebook.png" onclick="onClick(this)" class="w3-hover-opacity" alt="facebook" width="38" height="38" ></a></i>
-       
-          <i><a href="https://www.linkedin.com/in/kaiser-a-özhun-89842313/"target="_blank">
-            <img src="media/bild/link.png" onclick="onClick(this)" class="w3-hover-opacity" alt="facebook" width="38" height="38" ></a></i>   
 
-    </div>
-  <p> © 2018 K-Design AB. All rights reserved<a href="file:///Users/kaiser/Documents/kaiserdesign.html#home" title="W3.CSS" target="_blank" class="w3-hover-text-green">  Kaiser A ÖzHun</a></p>
-</footer>
- 
+  <!--Start Contact Us-->
+  <div class="container" id="Contact"> <!--Start Contact Us Container-->
+    <h2 class="text-center col-lg-4 col-md-4 col-sm-12">Contact</h2>  <br> <br><br>   <!-- Contact Us Heading -->
+    <div class="row">           <!--Start Contact Us Row-->
+      <div class="col-md-8">    <!--Start Contact Us 1st Column-->
+        <form action="pen1921@me.com" method="post">
+          <input class="form-control" name="name" placeholder="Name" /><br />
+          <input class="form-control" name="phone" placeholder="Phone" /><br />
+          <input class="form-control" name="email" placeholder="E-mail" /><br />
+          <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+          <input class="btn btn-dark" type="submit" value="Send" /><br /><br />
+        </form>
+      </div>  <!-- End Contact Us 1st Column-->
+
+
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">    <!-- Start Contact Us 2nd Column-->
+        <strong>KaiserDDev:</strong> <br>
+        <p>I'd love your feedback! Here's all you need:&nbsp;</p>
+        <p><i class="far fa-map-marker-alt"></i>  Address:   Sanktlarsväg 57,22270, Lund Sweden</p>
+        <p><i class="far fa-at"></i>  Email:  pen1921@me.com</p> <a href="pen1921@me.com">Directly Send Email:  <i class="far fa-envelope"></i></a>
+        <p><i class="far fa-phone"></i>  Telphone:  +46(0)703637554</p><a href="tel:+46(0)703637554">Directly call:  <i class="far fa-phone"></i></a>
+                <br>
+    
+        <br><br>
+        <strong>KaiserDDev:</strong> <br>
+        Sanktlars vät 57, <br>
+        22270, Lund <br>
+        Skåne-Sweden <br>
+        Phone: +46 70 363 7554 <br> 
+        <a href="https://www.kaisertech.tk" target="_blank">www.kaisertech.tk</a>
+        <a href="https://www.kaiserlund.ml" target="_blank">www.kaiserlund.ml</a> <br>
+      </div>    <!-- End Contact Us 2nd Column-->
+    </div>    <!-- End Contact Us Row-->
+  </div>  <!-- End Contact Us Container-->    <!-- End Contact Us -->
+<div id="googleMap"></div>
+  
+  
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(55.682085, 13.179184) ;
-  var mapOptions= {
-    center:myCenter,
+  function myMap()
+  {
+    myCenter=new google.maps.LatLng(55.682085, 13.179184) ;
+    var mapOptions= {
+      center:myCenter,
+      zoom:15, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrV8M_hXkGQ6LZeqSQZ_R-VqJLMfFHGZI&callback=myMap"></script>
+  
+ <!-- test new year delate latter -->
+<br><br>
+  <section class="xmas">
+    <div class="to">
+      <h1 class="headline">Merry Christmas!</h1>
+      <div class="pull-right">
+        <div class="xmas-ornament red"><br/>Lale<br/>Happy <br/>New Year </div>
+        <div class="xmas-ornament blue"><br/>Kaiser<br/><br/>2019</div>
+      </div>
+     </div>
+      <div class="from">
+      <a class="jp-link small-title from-name" href="http://kaiserlund.ml"></a>
+    </div>
+      <canvas id="xmas">
+      </canvas>
+  </section>
 
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+<!-- test end-->
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
+  <!-- Start Footer-->
+  <footer class="container-fluid bg-dark text-white mt-5" style="border-top: 3px solid rgb(188, 246, 248);">
+    <div class="container">   <!-- Start Footer Container -->
+      <div class="row py-3">    <!-- Start Footer Row -->
+        <div class="col-lg-4 col-md-4 col-sm-12">      <!-- Start Footer 1st Column -->
+          <div>
+            <span class="text-warning">Follow Me: </span>
+            <a href="https://www.facebook.com/GeekyShow" target="_blank"><i class="fab fa-facebook-f px-3"></i></a>
+            <a href="https://twitter.com/Geekyshow1" target="_blank"><i class="fab fa-twitter pr-3"></i></a>
+            <a href="https://www.youtube.com/user/GeekyShow1" target="_blank"><i class="fab fa-youtube pr-3"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-google-plus-g pr-3"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-rss pr-3"></i></a>
+          </div>
+        </div>    <!-- End Footer 1st Column -->
+             <!-- back to the top-->
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center"> <!-- Start Footer 2nd Column -->
+           <small><a href="#top" class=" back-to-top btn btn-outline-info mr-3">Back to top</a> </small>
+        </div> <!-- End Footer 2nd Column -->
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+        <div class="col-lg-4 col-md-4 col-sm-12 text-right">   <!-- Start Footer 3rd Column -->
+          <small class="text-warning"> Designed by <a href="https://www.kaiserlund.ml" target="_blank">Kaiser</a> &copy; 2018. </small>
+        </div>    <!-- End Footer 3rd Column -->
+      </div>    <!-- End Footer Row -->
+    </div>    <!-- End Footer Container -->
+  </footer> <!-- End Footer -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    
+<script>
 
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+$(document).ready(function(){
+
+initLetItSnow();
+});
+
+
+var initLetItSnow = function(){
+
+(function() {
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+    function(callback) {
+        window.setTimeout(callback, 1000 / 60);
+    };
+    window.requestAnimationFrame = requestAnimationFrame;
+})();
+
+var flakes = [],
+    canvas = document.getElementById("xmas"),
+    ctx = canvas.getContext("2d"),
+    mX = -100,
+    mY = -100;
+
+    if( $(window).width() < 999 ){
+      var flakeCount = 125;
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      var flakeCount = 450;
     }
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+function snow() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (var i = 0; i < flakeCount; i++) {
+        var flake = flakes[i],
+            x = mX,
+            y = mY,
+            minDist = 250,
+            x2 = flake.x,
+            y2 = flake.y;
+
+        var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+            dx = x2 - x,
+            dy = y2 - y;
+
+        if (dist < minDist) {
+            var force = minDist / (dist * dist),
+                xcomp = (x - x2) / dist,
+                ycomp = (y - y2) / dist,
+                deltaV = force;
+
+            flake.velX -= deltaV * xcomp;
+            flake.velY -= deltaV * ycomp;
+
+        } else {
+            flake.velX *= .98;
+            if (flake.velY <= flake.speed) {
+                flake.velY = flake.speed
+            }
+            flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+        }
+
+        ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+        flake.y += flake.velY;
+        flake.x += flake.velX;
+            
+        if (flake.y >= canvas.height || flake.y <= 0) {
+            reset(flake);
+        }
+
+        if (flake.x >= canvas.width || flake.x <= 0) {
+            reset(flake);
+        }
+
+        ctx.beginPath();
+        ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    requestAnimationFrame(snow);
+};
+
+function reset(flake) {
+    flake.x = Math.floor(Math.random() * canvas.width);
+    flake.y = 0;
+    flake.size = (Math.random() * 3) + 2;
+    flake.speed = (Math.random() * 1) + 0.5;
+    flake.velY = flake.speed;
+    flake.velX = 0;
+    flake.opacity = (Math.random() * 0.5) + 0.3;
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+function init() {
+    for (var i = 0; i < flakeCount; i++) {
+        var x = Math.floor(Math.random() * canvas.width),
+            y = Math.floor(Math.random() * canvas.height),
+            size = (Math.random() * 3) + 4,
+            speed = (Math.random() * 1) + 0.5,
+            opacity = (Math.random() * 0.5) + 0.3;
+
+        flakes.push({
+            speed: speed,
+            velY: speed,
+            velX: 0,
+            x: x,
+            y: y,
+            size: size,
+            stepSize: (Math.random()) / 160,
+            step: 0,
+            opacity: opacity
+        });
     }
-}
+
+    snow();
+};
+
+canvas.addEventListener("mousemove", function(e) {
+    mX = e.clientX,
+    mY = e.clientY
+});
+
+window.addEventListener("resize",function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+})
+
+init();
+};
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrV8M_hXkGQ6LZeqSQZ_R-VqJLMfFHGZI&callback=myMap"></script>
-
 
 </body>
 </html>
-
