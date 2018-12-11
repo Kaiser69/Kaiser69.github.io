@@ -1,5 +1,4 @@
-
-  body, html {
+ body, html {
       height: auto;
   }
 
@@ -28,9 +27,6 @@
   margin-top: 74px;
   
 }
-
-
-
 
 /* Header Image Sub-Title */
 .st {
@@ -146,7 +142,6 @@ text-align: center;
   left:-50%;
   transform: skewX(-5deg);
 }
-
 
 .box .content{
   position:absolute;
@@ -352,6 +347,8 @@ text-align: center;
   -webkit-animation-iteration-count: infinite;
   transform-origin: 50% -2em;
   float: left;
+  font-family: 'Great Vibes', cursive;
+  font:13px;
 }
 .xmas-ornament::after {
   position: absolute;
