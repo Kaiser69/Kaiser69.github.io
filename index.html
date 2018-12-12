@@ -266,26 +266,7 @@
 
 <!-- test end-->
 
-    <br><br>
-    
-    <audio id="rock" src="images/christmas.mp3" preload="auto"></audio>
-    
-    <div class="audiocontroller">
-      <i class="audio-logo glyphicon glyphicon-headphones"></i>
-      <i class="dynamiclink glyphicon glyphicon-play" id="play"></i></a>
-      <i class="dynamiclink glyphicon glyphicon-pause" id="pause"></i>
-      <select id="currentTrack">
-        <option value="rock">Rock</option>
-      
-      </select>
-      <i class="dynamiclink glyphicon glyphicon-stop" id="stop"></i>
-    </div>
-    <p class="text-center">
-      <a id="author" href="http://kaiserlund.ml" target="_blank">Play Jingle Bells Music</a>
-    </p>
-    
-    <br><br>
-    
+ 
   <!-- Start Footer-->
   <footer class="container-fluid bg-dark text-white mt-5" style="border-top: 3px solid rgb(188, 246, 248);">
     <div class="container">   <!-- Start Footer Container -->
@@ -452,48 +433,6 @@ window.addEventListener("resize",function(){
 init();
 };
   
-  
-  //Simple HTML5 Music Player by design1online.com, LLC
-
-var currentTrack = null;
-var paused = false;
-
-$(document).ready(function() {
-  currentTrack = $('#currentTrack').val();
-  
-  $("#play").click(function() { play(); });
-  $("#stop").click(function() { stop(); });
-  $("#pause").click(function() { pause(); });
-});
-
-function play() {
-
-  //set the track back to the beginning
-  if (!paused) {
-    stop();
-    currentTrack = $('#currentTrack').val();
-    
-    //make sure track starts from the begining each time
-    document.getElementById(currentTrack).load();
-  }
-
-  //play the track
-	document.getElementById(currentTrack).play();
-}
-	
-//stop playing the current track
-function stop() {
-  if (currentTrack) {
-    document.getElementById(currentTrack).pause();
-    paused = false;
-  }
-}
-
-//stop the track but don't go back to the beginning
-function pause() {
-  paused = true;
-  document.getElementById(currentTrack).pause();
-}
 </script>
 
 </body>
