@@ -895,5 +895,24 @@ ul.orbit-bullets li.active.has-thumb { background-position: 0 0; border-top: 2px
 /* Mobile */
 @media only screen and (max-width: 767px) { .reveal-modal-bg { position: absolute; }
   .reveal-modal, .reveal-modal.small, .reveal-modal.medium, .reveal-modal.large, .reveal-modal.xlarge { width: 80%; top: 15px; left: 50%; margin-left: -40%; padding: 20px; height: auto; } }
-  /* NOTES Close button entity is &#215;
- Example markup <div id="myModal" class="reveal-modal"> <h2>Awesome. I have it.</h2> <p class="lead">Your couch.  I it's mine.</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p> <a class="close-reveal-modal">&#215;</a> </div> */
+ h1 {
+    font-size: 22px;
+}
+
+@media (min-width:576px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:992px) {
+    h1 {
+        font-size: 34px;
+    }
+}
