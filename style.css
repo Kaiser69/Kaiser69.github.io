@@ -435,3 +435,45 @@ text-align: center;
 .xmas .from .jp-link:hover {
   color: #e74c3c;
 }
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+    .reveal-modal-bg {
+        position: absolute;
+    }
+    .reveal-modal,
+    .reveal-modal.small,
+    .reveal-modal.medium,
+    .reveal-modal.large,
+    .reveal-modal.xlarge {
+        width: 80%;
+        top: 15px;
+        left: 50%;
+        margin-left: -40%;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+h1 {
+    font-size: 22px;
+}
+
+@media (min-width:576px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:992px) {
+    h1 {
+        font-size: 34px;
+    }
+}
